@@ -1,0 +1,36 @@
+@import "fonts";
+
+body {
+font-family: TTHoves;
+font-size: 50px;
+
+    background-color: greenyellow;
+    span {
+        font-size: 20px;
+        font-weight: 700;
+        color: red;
+    }
+    background: url('@img/hero.jpg') 0 0 no-repeat;
+}
+
+@media (max-width: 768px) {
+    span {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: pink;
+    }
+}
+
+footer {
+    background-color: green;
+    color: blue;
+    font-size: 100px;
+}
+
+.icon {
+    fill: currentColor;
+  }
