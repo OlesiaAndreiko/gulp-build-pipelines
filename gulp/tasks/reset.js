@@ -1,5 +1,5 @@
 import {deleteAsync} from 'del';
 
-export const reset = async () => {
-    return await deleteAsync(app.path.clean)
+export const reset = () => {
+    return deleteAsync(app.path.clean)
 }

@@ -30,9 +30,6 @@
   font-style: normal;
 }
 
-.no-webp body {
-  background: url("../img/hero.jpg") 0 0 no-repeat; }
-
 body {
   font-family: TTHoves;
   font-size: 50px;
@@ -64,5 +61,3 @@ footer {
     background-color: pink;
   }
 }
-
-.webp body { background: url(../img/hero.webp) 0 0 no-repeat; }
