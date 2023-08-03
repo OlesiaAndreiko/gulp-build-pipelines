@@ -30,34 +30,175 @@
   font-style: normal;
 }
 
+/* fonts*/
+
+/* text-colors */
+
+/* bg-colors */
+
+/* shadow-colors */
+
+/* animation */
+
 body {
-  font-family: TTHoves;
-  font-size: 50px;
-  background-color: greenyellow;
+  font-family: "TTHoves";
 }
 
-body span {
-  font-size: 20px;
+/* reset styles */
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+input {
+  padding: 0;
+}
+
+.container {
+  width: 1440px;
+  padding-left: 135px;
+  padding-right: 135px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  display: flex;
+  gap: 330px;
+  align-items: center;
+  height: 102px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgb(51, 51, 51);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 90px;
+}
+
+.hero__title--wrap {
+  width: 400px;
+  color: rgb(189, 189, 189);
+  padding-top: 336px;
+}
+
+.hero__title {
+  max-width: 278px;
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.hero__title--discr {
   font-weight: 700;
-  color: red;
+  color: rgb(51, 51, 51);
+}
+
+.hero__image--wrap {
+  position: relative;
+}
+
+.hero__image--btn {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.nav__list {
+  display: flex;
+  gap: 60px;
+}
+
+.nav--current {
+  position: relative;
+}
+
+.nav--current::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0px;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.nav--current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.nav__link {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.button {
+  min-width: 222px;
+  min-height: 71px;
+  font-family: inherit;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.button__primary {
+  color: rgb(51, 51, 51);
+  background-color: rgb(255, 255, 255);
+}
+
+.button__secondary {
+  color: rgb(255, 255, 255);
+  background-color: rgb(51, 51, 51);
 }
 
 footer {
   background-color: green;
   color: blue;
   font-size: 100px;
-}
-
-.icon {
-  fill: currentColor;
-}
-
-@media (max-width: 768px) {
-  span {
-    font-size: 20px;
-  }
-
-  body {
-    background-color: pink;
-  }
 }

@@ -3,24 +3,55 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230803140614">
+        <!-- normalize start -->
+
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css?_v=20230803232928"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+  
+      <!-- normalize end -->
+    <link rel="stylesheet" href="css/style.min.css?_v=20230803232928">
     <title>Main</title>
 </head>
   <body>
-    <header>
-    <h2>I am header!</h2>
- 
-    
+    <header class="header container">
 
+    <a class="link" href="">
+      <svg class="icon" width="70" height="44">
+        <use href="img/icons.svg#logo"></use>
+      </svg>
+    </a>
+  
+  <nav class="nav">
+    <ul class="nav__list list">
+      <li class="list"><a class="link nav__link nav--current" href="">головна</a></li>
+      <li class="list"><a class="link nav__link" href="">галерея</a></li>
+      <li class="list"><a class="link nav__link" href="">проекти</a></li>
+      <li class="list"><a class="link nav__link" href="">сертифікати</a></li>
+      <li class="list"><a class="link nav__link" href="">контакти</a></li>
+    </ul>
+  </nav>
 </header>
+
     <main>
-      <p>Hello world!</p>
+      <section class="container hero">
+    <div class="hero__title--wrap"><h1 class="hero__title">project<div class="hero__title--discr">home</div></h1></div>
+    <div class="hero__image--wrap">
+         <picture><source srcset="img/hero.webp" type="image/webp"><img src="img/hero.jpg" alt="project home" width="770" height="829"></picture>
+         <button class="button button__primary hero__image--btn" type="button" area-label="view">подивитися</button>
+    </div>
+</section>
+      <!-- <p>Hello world!</p> -->
      
     
         <!-- <picture><source srcset="img/hero.webp" type="image/webp"><img src="img/hero.jpg"></picture> -->
         <!-- <img width="15" src="img/svgicons/facebook.svg" alt="" /> -->
-        <picture><source srcset="img/hero.webp" type="image/webp"><img width="300" src="img/hero.jpg" alt="" /></picture>
-     <span> Lorem ipsum dolor sit amet. </span>
+        <!-- <picture><source srcset="img/hero.webp" type="image/webp"><img width="300" src="img/hero.jpg" alt="" /></picture> -->
+     <!-- <span> Lorem ipsum dolor sit amet. </span> -->
     </main>
     <footer>
     <svg class="icon" width="40" height="40">
@@ -29,6 +60,6 @@
 
     <p>twitter, 🫂</h2>
 </footer>
-    <script src="js/app.min.js?_v=20230803140614"></script>
+    <script src="js/app.min.js?_v=20230803232928"></script>
   </body>
 </html>

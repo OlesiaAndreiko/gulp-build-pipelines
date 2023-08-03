@@ -1,0 +1,26 @@
+.button {
+  min-width: 222px;
+  min-height: 71px;
+
+  font-family: inherit;
+  font-weight: 400;
+
+  border: none;
+
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: calc(12 / 12);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;  
+
+  &__primary {
+    color: $main-txt-cl;
+    background-color: $light-bg-cl;
+  }
+
+  &__secondary {
+    color: $white-txt-cl;
+    background-color: $image-bg-cl;
+  }
+}

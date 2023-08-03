@@ -1,0 +1,38 @@
+.hero {
+    display: flex;
+    justify-content: space-between;   
+
+    padding-bottom: 90px;
+
+    &__title--wrap {
+        width: 400px;
+        color: $title-txt-cl;
+
+        padding-top: 336px;
+    }
+
+    &__title {        
+        max-width: 278px;
+
+        font-size: 64px;
+        font-weight: 300;
+        line-height: calc(64 / 64);
+        text-transform: uppercase;
+    }
+
+    &__title--discr {
+        font-weight: 700; 
+        color: $main-txt-cl;
+    }
+
+    &__image--wrap {
+        position: relative;
+    }
+
+    &__image--btn {
+        position: absolute;
+
+        left:0;
+        bottom: 0;
+    }
+}

@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    gap: 330px;
+    align-items: center;
+
+    height: 102px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(12 / 12);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    color: $main-txt-cl;
+}

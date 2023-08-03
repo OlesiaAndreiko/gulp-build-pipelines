@@ -1,29 +1,29 @@
 @import "fonts";
 
-body {
-font-family: TTHoves;
-font-size: 50px;
+// utils styles
+@import './utils/variables';
 
-    background-color: greenyellow;
-    span {
-        font-size: 20px;
-        font-weight: 700;
-        color: red;
-    }
-    // background: url('@img/hero.jpg') 0 0 no-repeat;
-}
 
-@media (max-width: 768px) {
-    span {
-        font-size: 20px;
-    }
-}
+// base styles
+@import './base/common';
+@import './base/reset';
+@import './base/container';
 
-@media (max-width: 768px) {
-    body {
-        background-color: pink;
-    }
-}
+// layouts styles
+@import './layout/header';
+@import './layout/hero';
+
+// components styles
+@import './components/nav';
+@import './components/button';
+
+
+// .header__icon {
+//     color: $main-txt-cl;
+// }
+// .icon {
+//     fill: currentColor;
+//   }
 
 footer {
     background-color: green;
@@ -31,6 +31,3 @@ footer {
     font-size: 100px;
 }
 
-.icon {
-    fill: currentColor;
-  }

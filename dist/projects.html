@@ -3,16 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230803140614">
+        <!-- normalize start -->
+
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css?_v=20230803232928"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+  
+      <!-- normalize end -->
+    <link rel="stylesheet" href="css/style.min.css?_v=20230803232928">
     <title>Projects</title>
 </head>
 <body>
-    <header>
-    <h2>I am header!</h2>
- 
-    
+    <header class="header container">
 
+    <a class="link" href="">
+      <svg class="icon" width="70" height="44">
+        <use href="img/icons.svg#logo"></use>
+      </svg>
+    </a>
+  
+  <nav class="nav">
+    <ul class="nav__list list">
+      <li class="list"><a class="link nav__link nav--current" href="">головна</a></li>
+      <li class="list"><a class="link nav__link" href="">галерея</a></li>
+      <li class="list"><a class="link nav__link" href="">проекти</a></li>
+      <li class="list"><a class="link nav__link" href="">сертифікати</a></li>
+      <li class="list"><a class="link nav__link" href="">контакти</a></li>
+    </ul>
+  </nav>
 </header>
+
     <main></main>
     <footer>
     <svg class="icon" width="40" height="40">
