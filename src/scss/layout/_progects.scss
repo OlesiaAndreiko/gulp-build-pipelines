@@ -1,0 +1,49 @@
+.projects {
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    margin-bottom: 30px;
+  }
+
+  &__list--title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 570px;
+    height: 255px;
+    background: linear-gradient(to right, $image-bg-cl, $image-bg-cl),
+      url("../../img/projects/img-1-title.jpg");
+    background-color: $image-bg-cl;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__review {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__review--caption {
+    width: 413px;
+
+    font-size: 64px;
+    font-weight: 700;
+    line-height: calc(64 / 64);
+    text-transform: uppercase;
+
+    color: $white-txt-cl;
+  }
+
+  &--btn {
+    margin-left: auto;
+  }
+}
