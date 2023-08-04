@@ -1,9 +1,20 @@
 .header {
+
+    // for header position: fixed
+
+    // position: fixed;
+    // top: 0;
+    // left: 135;
+    // width: 100%;
+    // z-index: 1000;
+   
+    height: 102px;
+
     display: flex;
-    gap: 330px;
+    justify-content:space-between ;
+    column-gap: 330px;
     align-items: center;
 
-    height: 102px;
 
     font-weight: 400;
     font-size: 12px;
@@ -12,4 +23,5 @@
     text-transform: uppercase;
 
     color: $main-txt-cl;
+    background-color: $light-bg-cl;    
 }

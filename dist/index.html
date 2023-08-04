@@ -7,14 +7,14 @@
 
         <link
         rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css?_v=20230803232928"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css?_v=20230804182940"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
       />
   
       <!-- normalize end -->
-    <link rel="stylesheet" href="css/style.min.css?_v=20230803232928">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230804182940">
     <title>Main</title>
 </head>
   <body>
@@ -39,12 +39,82 @@
 
     <main>
       <section class="container hero">
-    <div class="hero__title--wrap"><h1 class="hero__title">project<div class="hero__title--discr">home</div></h1></div>
-    <div class="hero__image--wrap">
-         <picture><source srcset="img/hero.webp" type="image/webp"><img src="img/hero.jpg" alt="project home" width="770" height="829"></picture>
-         <button class="button button__primary hero__image--btn" type="button" area-label="view">подивитися</button>
-    </div>
+  <div class="hero__left-side">
+    <h1 class="hero__title">
+      project
+      <div class="hero__title--discr">home</div>
+    </h1>
+    <div class="hero__slider">
+    <button class="button-slider" type="button">
+      <svg class="icon" width="24" height="24">
+        <use href="img/icons.svg#arrow-left"></use>
+      </svg>
+    </button>
+    <button class="button-slider" type="button">
+      <svg class="icon" width="24" height="24">
+        <use href="img/icons.svg#arrow-right"></use>
+      </svg>
+    </button>
+</div>
+<div class="hero__pagination">
+    <div class="hero__pagination-item hero__pagination-item--current">01</div>
+    <div class="hero__pagination-item">02</div>
+</div>
+  </div>
+  <div class="hero__right-side">
+    <picture><source srcset="img/hero.webp" type="image/webp"><img src="img/hero.jpg" alt="project home" width="770" height="829" /></picture>
+    <button
+      class="button button__primary hero__image--btn"
+      type="button"
+      area-label="view"
+    >
+      подивитися<svg class="icon" width="24" height="24">
+        <use href="img/icons.svg#arrow-right"></use>
+      </svg>
+    </button>
+  </div>
 </section>
+
+      <section class="container about">
+    <div class="about__wrap">
+    <div class="about__content">
+        <div class="about__images--left-side">       
+        <picture><source srcset="img/about/building-1.webp" type="image/webp"><img src="img/about/building-1.jpg" alt="building" width="270" height="265"></picture>
+        <picture><source srcset="img/about/building-3.webp" type="image/webp"><img src="img/about/building-3.jpg" alt="building" width="270" height="140"></picture>
+        </div>
+        <div class="about__images--right-side">
+        <picture><source srcset="img/about/building-2.webp" type="image/webp"><img src="img/about/building-2.jpg" alt="building" width="270" height="345"></picture>
+        </div>
+        <div class="about__discr">
+        <h2 class="title">Про нас</h2>
+        <p class="about__discr--text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <button
+        class="button button__primary"
+        type="button"
+        area-label="read"
+      >
+        читати<svg class="icon" width="24" height="24">
+          <use href="img/icons.svg#arrow-right"></use>
+        </svg>
+      </button>
+        </div>
+    </div>
+</div>
+</section>
+      <section class="container benefits">
+  <h2 class="title" >Основні задачі</h2>
+  <ul class="list benefits__list">
+    <li class="benefits__list--item">
+      <span class="benefits__number">1</span>
+      <p class="benefits__descr  benefits__descr--first">Створення комфортних умов&nbsp;і&nbsp;підвищення якості&nbsp;обслуговування<br>клієнтів</p>
+    </li>
+    <li class="benefits__list--item">
+        <span class="benefits__number">2</span>
+        <p class="benefits__descr">Постійно вдосконалювати якість наданих&nbsp;послуг&nbsp;шляхом навчання персоналу&nbsp;,&nbsp;закупки нового обладнання та&nbsp;посиленої реклами на ринку</p>
+      </li>
+  </ul>
+</section>
+
       <!-- <p>Hello world!</p> -->
      
     
@@ -55,11 +125,11 @@
     </main>
     <footer>
     <svg class="icon" width="40" height="40">
-        <use href="img/icons.svg#twitter"></use>
+        <use href="img/icons.svg#x-twitter"></use>
     </svg>
 
     <p>twitter, 🫂</h2>
 </footer>
-    <script src="js/app.min.js?_v=20230803232928"></script>
+    <script src="js/app.min.js?_v=20230804182940"></script>
   </body>
 </html>

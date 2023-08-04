@@ -1,38 +1,80 @@
 .hero {
     display: flex;
-    justify-content: space-between;   
-
+    justify-content: space-between;
+    // for header position: fixed
+    // margin-top: 102px;
     padding-bottom: 90px;
 
-    &__title--wrap {
+    &__left-side {
         width: 400px;
         color: $title-txt-cl;
 
         padding-top: 336px;
+        // padding-bottom: 90px;
     }
 
-    &__title {        
+    &__title {
         max-width: 278px;
 
         font-size: 64px;
         font-weight: 300;
         line-height: calc(64 / 64);
         text-transform: uppercase;
+
+        margin-bottom: 90px;
     }
 
     &__title--discr {
-        font-weight: 700; 
+        font-weight: 700;
         color: $main-txt-cl;
     }
 
-    &__image--wrap {
+    &__right-side {
         position: relative;
     }
 
     &__image--btn {
         position: absolute;
 
-        left:0;
+        left: 0;
         bottom: 0;
+    }
+
+    &__slider {
+        display: flex;
+        gap: 23px;
+
+        margin-bottom: 90px;
+    }
+
+    &__pagination {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 142px;
+        height: 31px;
+
+    }
+
+    &__pagination-item {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: calc(24 / 24);
+
+        position: relative;
+    }
+
+    &__pagination-item--current::after {
+        content: "";
+
+        position: absolute;
+        right: -71px;
+        bottom: 10px;
+        transform: rotate(135deg);
+
+        display: block;
+        width: 43px;
+        height: 2px;
+        background-color: $pagination-cl; 
     }
 }

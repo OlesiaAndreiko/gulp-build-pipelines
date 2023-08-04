@@ -26,29 +26,3 @@
   font-weight: 300;
   font-style: normal;
 }
-body {
-  font-family: TTHoves;
-  font-size: 50px;
-  background-color: greenyellow;
-  background: url("@img/hero.jpg") 0 0 no-repeat;
-}
-body span {
-  font-size: 20px;
-  font-weight: 700;
-  color: red;
-}
-
-@media (max-width: 768px) {
-  span {
-    font-size: 20px;
-  }
-}
-@media (max-width: 768px) {
-  body {
-    background-color: pink;
-  }
-}
-footer {
-  color: blue;
-  font-size: 100px;
-}/*# sourceMappingURL=style.css.map */

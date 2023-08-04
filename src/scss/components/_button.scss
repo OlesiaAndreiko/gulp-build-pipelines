@@ -1,26 +1,46 @@
 .button {
-  min-width: 222px;
-  min-height: 71px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
 
-  font-family: inherit;
-  font-weight: 400;
+    width: 222px;
+    height: 71px;
 
-  border: none;
+    font-family: inherit;
+    font-weight: 400;
 
-  cursor: pointer;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: calc(12 / 12);
-  letter-spacing: 0.2em;
-  text-transform: uppercase;  
+    border: none;
 
-  &__primary {
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: calc(12 / 12);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    &__primary {
+        color: $main-txt-cl;
+        background-color: $light-bg-cl;
+    }
+
+    &__secondary {
+        color: $white-txt-cl;
+        background-color: $btn-bg-cl;
+    }
+}
+
+.button-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 53px;
+    min-height: 53px;
+
     color: $main-txt-cl;
     background-color: $light-bg-cl;
-  }
+    border: 1px solid $border-cl;
 
-  &__secondary {
-    color: $white-txt-cl;
-    background-color: $image-bg-cl;
-  }
+    cursor: pointer;
 }

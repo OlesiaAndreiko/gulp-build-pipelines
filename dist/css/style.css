@@ -1,7 +1,7 @@
 @font-face {
-  font-family: TTHoves;
+  font-family: SFProDisplay;
   font-display: swap;
-  src: url("../fonts/TTHoves-Black.woff2") format("woff2"), url("../fonts/TTHoves-Black.woff") format("woff");
+  src: url("../fonts/SFProDisplay-Black.woff2") format("woff2"), url("../fonts/SFProDisplay-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
 }
@@ -35,6 +35,8 @@
 /* text-colors */
 
 /* bg-colors */
+
+/* other-colors */
 
 /* shadow-colors */
 
@@ -81,6 +83,10 @@ input {
   padding: 0;
 }
 
+button {
+  padding: 0;
+}
+
 .container {
   width: 1440px;
   padding-left: 135px;
@@ -90,16 +96,19 @@ input {
 }
 
 .header {
-  display: flex;
-  gap: 330px;
-  align-items: center;
   height: 102px;
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 330px;
+       column-gap: 330px;
+  align-items: center;
   font-weight: 400;
   font-size: 12px;
   line-height: 1;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: rgb(51, 51, 51);
+  background-color: rgb(255, 255, 255);
 }
 
 .hero {
@@ -108,7 +117,7 @@ input {
   padding-bottom: 90px;
 }
 
-.hero__title--wrap {
+.hero__left-side {
   width: 400px;
   color: rgb(189, 189, 189);
   padding-top: 336px;
@@ -120,6 +129,7 @@ input {
   font-weight: 300;
   line-height: 1;
   text-transform: uppercase;
+  margin-bottom: 90px;
 }
 
 .hero__title--discr {
@@ -127,7 +137,7 @@ input {
   color: rgb(51, 51, 51);
 }
 
-.hero__image--wrap {
+.hero__right-side {
   position: relative;
 }
 
@@ -135,6 +145,132 @@ input {
   position: absolute;
   left: 0;
   bottom: 0;
+}
+
+.hero__slider {
+  display: flex;
+  gap: 23px;
+  margin-bottom: 90px;
+}
+
+.hero__pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 142px;
+  height: 31px;
+}
+
+.hero__pagination-item {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  position: relative;
+}
+
+.hero__pagination-item--current::after {
+  content: "";
+  position: absolute;
+  right: -71px;
+  bottom: 10px;
+  transform: rotate(135deg);
+  display: block;
+  width: 43px;
+  height: 2px;
+  background-color: rgb(224, 224, 224);
+}
+
+.about {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.about__wrap {
+  padding-left: 100px;
+  background-color: rgb(251, 251, 251);
+}
+
+.about__content {
+  display: flex;
+  gap: 30px;
+  padding-top: 30px;
+}
+
+.about__images--left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: -30px;
+}
+
+.about__images--right-side {
+  display: flex;
+  align-items: center;
+}
+
+.about__discr {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  padding-right: 70px;
+}
+
+.about__discr--text {
+  width: 400px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5625;
+  color: rgb(0, 0, 0);
+}
+
+.benefits {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.benefits__list {
+  border: 1px solid green;
+  display: flex;
+  gap: 30px;
+}
+
+.benefits__list--item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 570px;
+  height: 144px;
+}
+
+.benefits__number {
+  font-family: SFProDisplay;
+  font-weight: 900;
+  font-size: 200px;
+  line-height: 1.195;
+  color: rgb(242, 242, 242);
+}
+
+.benefits__descr {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.6363636364;
+  color: rgb(51, 51, 51);
+}
+
+.benefits__descr--first {
+  width: 279px;
+}
+
+.nav {
+  margin-left: 0;
+  margin-right: auto;
 }
 
 .nav__list {
@@ -174,8 +310,12 @@ input {
 }
 
 .button {
-  min-width: 222px;
-  min-height: 71px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 222px;
+  height: 71px;
   font-family: inherit;
   font-weight: 400;
   border: none;
@@ -195,6 +335,25 @@ input {
 .button__secondary {
   color: rgb(255, 255, 255);
   background-color: rgb(51, 51, 51);
+}
+
+.button-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 53px;
+  min-height: 53px;
+  color: rgb(51, 51, 51);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(242, 242, 242);
+  cursor: pointer;
+}
+
+.title {
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 1;
+  color: rgb(189, 189, 189);
 }
 
 footer {
