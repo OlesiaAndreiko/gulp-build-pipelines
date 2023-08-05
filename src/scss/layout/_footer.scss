@@ -1,0 +1,63 @@
+.footer {
+    display: flex;
+    gap: 99px;
+
+    padding: 58px 212px 130px 116px;
+
+    font-family: TTHoves;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+
+    color: $light-grey-bg-cl;
+    background-color: $dark-bg-cl;
+
+
+    &__title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: calc(20 / 16);
+
+        margin-bottom: 25px;
+    }
+
+    &__wrap {
+        display: flex;
+        gap: 70px;
+    }
+
+    &__info {
+        display: flex;
+        gap: 158px;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    & address {
+        font-style: inherit;
+    }
+
+    &__address {
+        display: flex;
+        flex-direction: column;
+        gap: 33px;
+
+    }
+
+    &__address--link {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+
+    &__social--list {
+        display: flex;
+        align-items: baseline;
+        gap: 40px;
+    }
+}

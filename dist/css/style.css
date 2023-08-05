@@ -9,16 +9,8 @@
 @font-face {
   font-family: TTHoves;
   font-display: swap;
-  src: url("../fonts/TTHoves-Bold.woff2") format("woff2"), url("../fonts/TTHoves-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: TTHoves;
-  font-display: swap;
-  src: url("../fonts/TTHoves-Regular.woff2") format("woff2"), url("../fonts/TTHoves-Regular.woff") format("woff");
-  font-weight: 400;
+  src: url("../fonts/TTHoves-Black.woff2") format("woff2"), url("../fonts/TTHoves-Black.woff") format("woff");
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -27,6 +19,30 @@
   font-display: swap;
   src: url("../fonts/TTHoves-Light.woff2") format("woff2"), url("../fonts/TTHoves-Light.woff") format("woff");
   font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: TTHoves;
+  font-display: swap;
+  src: url("../fonts/TTHoves-Bold.woff2") format("woff2"), url("../fonts/TTHoves-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: TTHoves;
+  font-display: swap;
+  src: url("../fonts/TTHoves-Medium.woff2") format("woff2"), url("../fonts/TTHoves-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: TTHoves;
+  font-display: swap;
+  src: url("../fonts/TTHoves-Regular.woff2") format("woff2"), url("../fonts/TTHoves-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -240,7 +256,6 @@ button {
 }
 
 .benefits {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   gap: 60px;
@@ -249,7 +264,6 @@ button {
 }
 
 .benefits__list {
-  border: 1px solid green;
   display: flex;
   gap: 30px;
 }
@@ -336,7 +350,6 @@ button {
 }
 
 .connect__wrap {
-  border: 1px solid red;
   display: flex;
   gap: 30px;
 }
@@ -419,6 +432,158 @@ button {
 .connect__comment:hover,
 .connect__comment:focus {
   border-color: rgb(141, 141, 141);
+}
+
+.connect {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.connect__title {
+  margin-bottom: 22px;
+}
+
+.connect__wrap {
+  display: flex;
+  gap: 30px;
+}
+
+.connect__register {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+.connect__thumb {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.connect__label {
+  position: relative;
+  float: left;
+}
+
+.connect__label span,
+.connect__input,
+.connect__comment,
+.connect__input:invalid + span::before,
+.connect__comment:invalid + span::before,
+.connect__input:invalid + span::after,
+.connect__comment:invalid + span::after {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+}
+
+.connect__label span {
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  cursor: text;
+}
+
+.connect__input,
+.connect__comment {
+  padding: 10px;
+  outline: none;
+  color: rgb(51, 51, 51);
+  background-color: rgb(243, 243, 243);
+  border: 1px solid transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.connect__input {
+  width: 391px;
+  height: 46px;
+}
+
+.connect__comment {
+  width: 391px;
+  height: 147px;
+  resize: none;
+}
+
+.connect__input:invalid + span::before,
+.connect__comment:invalid + span::before {
+  content: attr(placeholder);
+  position: relative;
+  color: rgb(141, 141, 141);
+}
+
+.connect__input:invalid + span::after,
+.connect__comment:invalid + span::after {
+  content: "*";
+  position: relative;
+  color: rgb(195, 0, 0);
+}
+
+.connect__input:hover,
+.connect__input:focus,
+.connect__comment:hover,
+.connect__comment:focus {
+  border-color: rgb(141, 141, 141);
+}
+
+.footer {
+  display: flex;
+  gap: 99px;
+  padding: 58px 212px 130px 116px;
+  font-family: TTHoves;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+  color: rgb(251, 251, 251);
+  background-color: rgb(44, 44, 44);
+}
+
+.footer__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 25px;
+}
+
+.footer__wrap {
+  display: flex;
+  gap: 70px;
+}
+
+.footer__info {
+  display: flex;
+  gap: 158px;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer address {
+  font-style: inherit;
+}
+
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+}
+
+.footer__address--link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer__social--list {
+  display: flex;
+  align-items: baseline;
+  gap: 40px;
 }
 
 .nav {

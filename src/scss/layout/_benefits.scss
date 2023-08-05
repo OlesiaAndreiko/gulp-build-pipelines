@@ -1,46 +1,42 @@
 .benefits {
-    border: 1px solid red;
+    
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  &__list {
     display: flex;
-    flex-direction: column;
-    gap: 60px;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    gap: 30px;
+  }
 
+  &__list--item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 
-    &__list {
-        border: 1px solid green;
-        display: flex;
-        // justify-content: space-between;
-        gap: 30px;
-    }
+    width: 570px;
+    height: 144px;
+  }
 
-    &__list--item {
-        display: flex;
-        align-items: center;
-        gap: 30px;
+  &__number {
+    font-family: SFProDisplay;
+    font-weight: 900;
+    font-size: 200px;
+    line-height: calc(239 / 200);
+    color: $border-cl;
+  }
 
-        width: 570px;
-        height: 144px;
-    }
+  &__descr {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: calc(36 / 22);
 
-    &__number {
-        font-family: SFProDisplay;
-        font-weight: 900;
-        font-size: 200px;
-        line-height: calc(239 / 200);
-        color: $border-cl;
+    color: $main-txt-cl;
+  }
 
-    }
-
-    &__descr {
-        font-size: 22px;
-        font-weight: 400;
-        line-height: calc(36 / 22);
-
-        color: $main-txt-cl;
-    }
-
-    &__descr--first {
-        width: 279px;
-    }
+  &__descr--first {
+    width: 279px;
+  }
 }

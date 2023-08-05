@@ -1,4 +1,5 @@
 .connect {
+
     padding-top: 120px;
     padding-bottom: 120px;
 
@@ -7,7 +8,6 @@
     }
 
     &__wrap {
-        border: 1px solid red;
         display: flex;
         gap: 30px;
 
@@ -18,11 +18,6 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 22px;
-    //     font-weight: 400;
-    //     font-size: 14px;
-    //     line-height: calc(17 / 14);
-    //     letter-spacing: 0.04em;
-    //     color: $form-txt-cl;
     }
 
     &__thumb {
