@@ -38,6 +38,10 @@
         gap: 16px;
     }
 
+    &__nav--link {
+        transition: color $animation;
+    }
+
     & address {
         font-style: inherit;
     }
@@ -53,11 +57,26 @@
         display: flex;
         align-items: center;
         gap: 14px;
+
+        transition: color $animation;
     }
 
     &__social--list {
         display: flex;
         align-items: baseline;
         gap: 40px;
+    }
+
+    &__social--link {
+        transition: color $animation;
+    }
+
+    &__nav--link:hover,
+    &__nav--link:focus,
+    &__address--link:hover,
+    &__address--link:focus,
+    &__social--link:hover,
+    &__social--link:focus {
+        color: $form-txt-cl;
     }
 }

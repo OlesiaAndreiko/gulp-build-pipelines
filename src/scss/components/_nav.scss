@@ -40,5 +40,13 @@
     &__link {
         padding-top: 4px;
         padding-bottom: 4px;
+
+        transition: color $animation, background-color $animation;
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: $white-txt-cl;
+        background-color: $form-txt-cl;
     }
 }
