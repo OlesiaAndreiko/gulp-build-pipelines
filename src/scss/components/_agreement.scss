@@ -1,0 +1,32 @@
+
+
+.agreement {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &__check:hover + .agreement__icon,
+    &__check:focus + .agreement__icon {
+      fill: $accent-txt-cl;
+    }
+  
+    &__icon--check {
+      opacity: 0;
+      transition: opacity $animation;
+    }
+  
+    &__check:checked + &__icon &__icon--check {
+      opacity: 1;
+      transition: opacity $animation;
+    }
+  
+    &__check:checked + &__icon &__icon--uncheck {
+      opacity: 0;
+      transition: opacity $animation;
+    }
+  
+    &__icon {
+      flex-shrink: 0;
+      transition: fill $animation;
+    }    
+}

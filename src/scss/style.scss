@@ -2,6 +2,7 @@
 
 // utils styles
 @import './utils/variables';
+@import './utils/_hidden';
 
 
 // base styles
@@ -15,24 +16,13 @@
 @import './layout/about';
 @import './layout/benefits';
 @import './layout/progects';
+@import './layout/connect';
 
 // components styles
 @import './components/nav';
 @import './components/button';
 @import './components/title';
 @import './components/icon';
+@import './components/agreement';
 
-
-// .header__icon {
-//     color: $main-txt-cl;
-// }
-// .icon {
-//     fill: currentColor;
-//   }
-
-footer {
-    background-color: green;
-    color: blue;
-    font-size: 100px;
-}
 

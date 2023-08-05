@@ -1,0 +1,71 @@
+<section class="container connect">
+  <h2 class="title connect__title">Зв'язатися з нами</h2>
+  <div class="connect__wrap">
+    <form class="connect__register" name="connect-form" autocomplete="off">
+      <div class="connect__thumb">
+      <label class="connect__label">
+        <input class="connect__input" type="text" name="name" placeholder="Ім'я"/>
+      </label>
+      <label class="connect__label">
+        <input
+          class="connect__input" type="tel" name="phone"
+          required/>
+          <span placeholder="Номер телефону"></span>
+      </label>
+      <label class="connect__label">
+        <input class="connect__input" type="email" name="email" required />
+        <span placeholder="E-mail"></span>
+      </label>
+      <label class="connect__label">
+        <input class="connect__input" type="text" name="product" placeholder="Товар/послуга, що цікавить"/>
+      </label>
+      <label class="connect__label">
+        <textarea
+          class="connect__comment"
+          name="message"
+          rows="5"
+          required
+          ></textarea>
+        <span placeholder="Повідомлення"></span>
+      </label>
+    </div>
+    <div>
+      <label class="agreement">
+        <input
+          class="agreement__check visually-hidden"
+          type="checkbox"
+          name="agreement"
+        />
+        <svg class="agreement__icon" width="18" height="18">
+          <use
+            class="agreement__icon--uncheck"
+            href="@img/icons.svg#icon-uncheck"
+          ></use>
+          <use
+            class="agreement__icon--check"
+            href="@img/icons.svg#icon-check"
+          ></use>
+        </svg>
+        Надсилаючи заявку, Ви погоджуєтесь з політикою конфіденційності
+      </label>
+    </div>
+    <div>
+      <button
+        class="button button__secondary projects--btn"
+        type="submit"
+        area-label="send"
+      >
+        відправити<svg class="icon" width="24" height="24">
+          <use href="@img/icons.svg#arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+    </form>
+    <img
+      src="@img/connect/person-calling.jpg"
+      alt="a person communicates"
+      width="749"
+      height="369"
+    />
+  </div>
+</section>

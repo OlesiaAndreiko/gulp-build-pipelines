@@ -1,0 +1,101 @@
+.connect {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    &__title {
+        margin-bottom: 22px;
+    }
+
+    &__wrap {
+        border: 1px solid red;
+        display: flex;
+        gap: 30px;
+
+    }
+
+    &__register {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+    //     font-weight: 400;
+    //     font-size: 14px;
+    //     line-height: calc(17 / 14);
+    //     letter-spacing: 0.04em;
+    //     color: $form-txt-cl;
+    }
+
+    &__thumb {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__label {
+        position: relative;
+        float: left;
+    }
+
+    &__label span,
+    &__input,
+    &__comment,
+    &__input:invalid + span::before,
+    &__comment:invalid + span::before,
+    &__input:invalid + span::after,
+    &__comment:invalid + span::after {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: calc(17.5 / 14);
+        letter-spacing: 0.04em;
+    }
+
+
+    &__label span {
+        position: absolute;
+        top: 14px;
+        left: 12px;
+        cursor: text;
+    }
+
+    &__input, &__comment {
+        padding: 10px;
+        outline: none;
+        color: $main-txt-cl;
+        background-color: $form-bg-cl;
+        border: 1px solid transparent;
+
+        transition: border-color $animation;
+    }
+
+    &__input {
+        width: 391px;
+        height: 46px;
+    }
+
+    &__comment {
+        width: 391px;
+        height: 147px;
+        resize: none;
+    }
+
+    &__input:invalid + span::before,
+    &__comment:invalid + span::before {
+        content: attr(placeholder);
+        position: relative;
+        color: $form-txt-cl;
+    }
+
+    &__input:invalid + span::after,
+    &__comment:invalid + span::after {
+        content: '*';
+        position: relative;
+        color: $accent-txt-cl;
+    }
+
+    &__input:hover,
+    &__input:focus,
+    &__comment:hover,
+    &__comment:focus {
+      border-color: $form-txt-cl;
+    }
+}

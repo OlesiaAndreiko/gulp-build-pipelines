@@ -42,6 +42,20 @@
 
 /* animation */
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   font-family: "TTHoves";
 }
@@ -312,6 +326,101 @@ button {
   margin-left: auto;
 }
 
+.connect {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.connect__title {
+  margin-bottom: 22px;
+}
+
+.connect__wrap {
+  border: 1px solid red;
+  display: flex;
+  gap: 30px;
+}
+
+.connect__register {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+.connect__thumb {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.connect__label {
+  position: relative;
+  float: left;
+}
+
+.connect__label span,
+.connect__input,
+.connect__comment,
+.connect__input:invalid + span::before,
+.connect__comment:invalid + span::before,
+.connect__input:invalid + span::after,
+.connect__comment:invalid + span::after {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+}
+
+.connect__label span {
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  cursor: text;
+}
+
+.connect__input,
+.connect__comment {
+  padding: 10px;
+  outline: none;
+  color: rgb(51, 51, 51);
+  background-color: rgb(243, 243, 243);
+  border: 1px solid transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.connect__input {
+  width: 391px;
+  height: 46px;
+}
+
+.connect__comment {
+  width: 391px;
+  height: 147px;
+  resize: none;
+}
+
+.connect__input:invalid + span::before,
+.connect__comment:invalid + span::before {
+  content: attr(placeholder);
+  position: relative;
+  color: rgb(141, 141, 141);
+}
+
+.connect__input:invalid + span::after,
+.connect__comment:invalid + span::after {
+  content: "*";
+  position: relative;
+  color: rgb(195, 0, 0);
+}
+
+.connect__input:hover,
+.connect__input:focus,
+.connect__comment:hover,
+.connect__comment:focus {
+  border-color: rgb(141, 141, 141);
+}
+
 .nav {
   margin-left: 0;
   margin-right: auto;
@@ -424,10 +533,35 @@ button {
   fill: currentColor;
 }
 
-footer {
-  background-color: green;
-  color: blue;
-  font-size: 100px;
+.agreement {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.agreement__check:hover + .agreement__icon,
+.agreement__check:focus + .agreement__icon {
+  fill: rgb(195, 0, 0);
+}
+
+.agreement__icon--check {
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.agreement__check:checked + .agreement__icon .agreement__icon--check {
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.agreement__check:checked + .agreement__icon .agreement__icon--uncheck {
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.agreement__icon {
+  flex-shrink: 0;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .webp .projects__list--title { background: linear-gradient(to right, rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url(../../img/projects/img-1-title.webp); }
