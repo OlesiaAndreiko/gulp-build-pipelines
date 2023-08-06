@@ -19,6 +19,8 @@
   h6,
   p {
     margin: 0;
+    font-weight: inherit;
+    font-size: inherit;
   }
   
   img {
@@ -36,4 +38,13 @@
 
   button {
     padding: 0;
+    font-weight: inherit;
+    font-size: inherit;
   }
+  html,
+  body {
+    height: 100%;
+    line-height: 1;
+  }
+
+ 
