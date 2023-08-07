@@ -1,12 +1,4 @@
 .header {
-  // for header position: fixed
-
-  // position: fixed;
-  // top: 0;
-  // left: 135;
-  // width: 100%;
-  // z-index: 1000;
-
   position: absolute;
   width: 100%;
   top: 0;
@@ -36,8 +28,6 @@
 
   &__logo {
     display: flex;
-
-    // width: 70px;
   }
 
   &__nav {

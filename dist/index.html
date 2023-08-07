@@ -7,14 +7,14 @@
 
         <link
         rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css?_v=20230807184612"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css?_v=20230807223706"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
       />
   
       <!-- normalize end -->
-    <link rel="stylesheet" href="css/style.min.css?_v=20230807184612">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230807223706">
     <title>Main</title>
 </head>
   <body>
@@ -63,7 +63,7 @@
     </div>
   </div>
   <div class="hero__right-side">
-    <picture><source srcset="img/hero.webp" type="image/webp"><img src="img/hero.jpg" alt="project home" width="770" height="829" /></picture>
+    <picture><source srcset="img/hero/hero.webp" type="image/webp"><img class="anim img" src="img/hero/hero.jpg" alt="project home" width="770" height="829" /></picture>
     <button
       class="button button__primary hero__image--btn"
       type="button"
@@ -80,11 +80,11 @@
     <div class="about__wrap">
     <div class="about__content">
         <div class="about__images--left-side">       
-        <picture><source srcset="img/about/building-1.webp" type="image/webp"><img class="about__content--img" src="img/about/building-1.jpg" alt="building" width="270" height="265"></picture>
-        <picture><source srcset="img/about/building-3.webp" type="image/webp"><img class="about__content--img" src="img/about/building-3.jpg" alt="building" width="270" height="140"></picture>
+        <picture><source srcset="img/about/building-1.webp" type="image/webp"><img class="anim img about__content--img" src="img/about/building-1.jpg" alt="building" width="270" height="265"></picture>
+        <picture><source srcset="img/about/building-3.webp" type="image/webp"><img class="anim img about__content--img" src="img/about/building-3.jpg" alt="building" width="270" height="140"></picture>
         </div>
         <div class="about__images--right-side">
-        <picture><source srcset="img/about/building-2.webp" type="image/webp"><img class="about__content--img" src="img/about/building-2.jpg" alt="building" width="270" height="345"></picture>
+        <picture><source srcset="img/about/building-2.webp" type="image/webp"><img class="anim img about__content--img" src="img/about/building-2.jpg" alt="building" width="270" height="345"></picture>
         </div>
         <div class="about__discr">
         <h2 class="title">Про нас</h2>
@@ -104,7 +104,7 @@
 </div>
 </section>
       <section class="container benefits">
-  <h2 class="title" >Основні задачі</h2>
+  <h2 class="anim title" >Основні задачі</h2>
   <ul class="list benefits__list card-set">
     <li class="benefits__list--item card-item">
       <p class="benefits__number">1</p>
@@ -118,10 +118,10 @@
 </section>
 
       <section class="container projects">
-<h2 class="title projects__title">Наші проекти</h2>
+<h2 class="anim title projects__title">Наші проекти</h2>
 <ul class="list projects__list">
     <li class="projects__list--title projects__list--item">
-        <div class="projects__review">
+        <div class="anim img projects__review">
             <h3 class="projects__review--caption">досуговий центр</h3>
             <button
             class="button-review"
@@ -134,16 +134,16 @@
         </div>
     </li>    
     <li class="projects__list--item">
-        <picture><source srcset="img/projects/img-2.webp" type="image/webp"><img src="img/projects/img-2.jpg" alt="project photo" width="570" height="255"></picture>
+        <picture><source srcset="img/projects/img-2.webp" type="image/webp"><img class="anim img" src="img/projects/img-2.jpg" alt="project photo" width="570" height="255"></picture>
     </li>
     <li class="projects__list--item">
-        <picture><source srcset="img/projects/img-3.webp" type="image/webp"><img src="img/projects/img-3.jpg" alt="project photo" width="270" height="255"></picture>
+        <picture><source srcset="img/projects/img-3.webp" type="image/webp"><img class="anim img" src="img/projects/img-3.jpg" alt="project photo" width="270" height="255"></picture>
     </li>
     <li class="projects__list--item">
-        <picture><source srcset="img/projects/img-4.webp" type="image/webp"><img src="img/projects/img-4.jpg" alt="project photo" width="470" height="255"></picture>
+        <picture><source srcset="img/projects/img-4.webp" type="image/webp"><img class="anim img" src="img/projects/img-4.jpg" alt="project photo" width="470" height="255"></picture>
     </li>
     <li class="projects__list--item">
-        <picture><source srcset="img/projects/img-5.webp" type="image/webp"><img src="img/projects/img-5.jpg" alt="project photo" width="370" height="255"></picture>
+        <picture><source srcset="img/projects/img-5.webp" type="image/webp"><img class="anim img" src="img/projects/img-5.jpg" alt="project photo" width="370" height="255"></picture>
     </li>  
 </ul>
 <button
@@ -157,7 +157,7 @@
     </button>
 </section>
       <section class="container connect">
-  <h2 class="title connect__title">Зв'язатися з нами</h2>
+  <h2 class="anim title connect__title">Зв'язатися з нами</h2>
   <div class="connect__wrap">
     <form class="connect__register" name="connect-form" autocomplete="off">
       <div class="connect__thumb">
@@ -219,7 +219,7 @@
       </button>
     </div>
     </form>
-    <img
+    <img class="anim img"
       src="img/connect/person-calling.jpg"
       alt="a person communicates"
       width="749"
@@ -362,6 +362,6 @@
   </div> 
 </footer>
 
-    <script src="js/app.min.js?_v=20230807184612"></script>
+    <script src="js/app.min.js?_v=20230807223706"></script>
   </body>
 </html>

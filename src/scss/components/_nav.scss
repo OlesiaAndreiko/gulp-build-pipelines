@@ -1,5 +1,5 @@
 .nav {
-    @media screen and (max-width: 763px) {
+    @media screen and (max-width: 767.98px) {
         padding-right: 0px;
     }
 
@@ -10,7 +10,7 @@
 
 
     &__list {
-        @media screen and (max-width: 763px) {
+        @media screen and (max-width: 767.98px) {
             flex-direction: column;
             gap: 30px;
         }

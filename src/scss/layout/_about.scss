@@ -1,12 +1,11 @@
 .about {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: flex-end;
     justify-content: center;
     padding-top: 30px;
     padding-bottom: 30px;
 
-    @media screen and (min-width: 763px) {
+    @media screen and (min-width: 767.98px) {
         justify-content: flex-end;
         flex-wrap: nowrap;
    }
@@ -39,21 +38,19 @@
         gap: 30px;
 
         margin-bottom: -30px;
-        // border: 1px solid blue;
     }
 
     &__images--right-side {
-        // border: 1px solid green;
         display: flex;
         align-items: center;
     }
 
     &__discr {
         display: flex;
-        flex-direction: column;        gap: 20px;
+        flex-direction: column;        
+        gap: 20px;
 
         padding-right: 70px;
-        // border: 1px solid rgb(194, 28, 186);
     }
 
     &__discr--text {

@@ -1,0 +1,19 @@
+.anim.title {
+  transform: translateX(-40%);
+  transition: $animation-active;
+  opacity: 0;
+}
+
+.anim.title.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.anim.img {
+  transform: rotateY(90deg);
+  transition: $animation-active;
+}
+
+.anim.img.active {
+  transform: rotateY(0);
+}

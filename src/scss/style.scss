@@ -9,6 +9,7 @@
 @import './base/common';
 @import './base/reset';
 @import './base/container';
+@import "./base/anim";
 
 // layouts styles
 @import './layout/header';
@@ -25,5 +26,3 @@
 @import './components/title';
 @import './components/icon';
 @import './components/agreement';
-
-
