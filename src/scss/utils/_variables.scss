@@ -25,3 +25,9 @@ $pagination-cl: rgba(224, 224, 224, 1);
 
 /* animation */
 $animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+:root {
+    /* flex-grid */
+    // --card-gap: 187px;
+    --card-item: 1;
+  }

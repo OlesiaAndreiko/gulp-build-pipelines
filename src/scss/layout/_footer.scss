@@ -1,6 +1,11 @@
 .footer {
     display: flex;
     gap: 99px;
+    flex-direction: column;
+
+    @media screen and (min-width: 767.98px) {
+        flex-direction: row;
+    }
 
     padding: 58px 212px 130px 116px;
 
@@ -13,6 +18,10 @@
     color: $light-grey-bg-cl;
     background-color: $dark-bg-cl;
 
+    &__logo {
+        min-width: 145px;
+    }
+
 
     &__title {
         font-weight: 700;
@@ -24,12 +33,37 @@
 
     &__wrap {
         display: flex;
-        gap: 70px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        @media (min-width: 767.98px) {
+            flex-direction: row;
+       }
+   
     }
 
     &__info {
         display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
         gap: 158px;
+
+        @media (min-width: 1020px) {
+             flex-direction: row;
+        }
+    }
+
+    &__info--contacts {
+        display: flex;
+        gap: 70px;
+
+
+        flex-wrap: nowrap;
+        flex-direction: column;
+        @media (min-width: 763px) {
+            flex-direction: row;
+       }
+
     }
 
     &__nav {

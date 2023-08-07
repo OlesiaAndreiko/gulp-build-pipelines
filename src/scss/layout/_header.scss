@@ -1,23 +1,46 @@
 .header {
+  // for header position: fixed
 
-    // for header position: fixed
+  // position: fixed;
+  // top: 0;
+  // left: 135;
+  // width: 100%;
+  // z-index: 1000;
 
-    // position: fixed;
-    // top: 0;
-    // left: 135;
-    // width: 100%;
-    // z-index: 1000;
-   
-    height: 102px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  color: $main-txt-cl;
+  background-color: $light-bg-cl;
+
+  &__container {
+    @media screen and (max-width: 767.98px) {
+      min-height: 302px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+
+      padding-top: 30px;
+    }
 
     display: flex;
-    justify-content:space-between ;
-    column-gap: 330px;
     align-items: center;
+    min-height: 102px;
+  }
 
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
+  &__logo {
+    display: flex;
 
-    color: $main-txt-cl;
-    background-color: $light-bg-cl;    
+    // width: 70px;
+  }
+
+  &__nav {
+    flex: 1 1 auto;
+  }
 }

@@ -11,6 +11,14 @@
     margin-bottom: 30px;
   }
 
+  &__list--item {
+    transition: scale $animation;
+  }
+
+  &__list--item:hover {
+    scale: 1.05;
+  }
+
   &__list--title {
     display: flex;
     align-items: center;

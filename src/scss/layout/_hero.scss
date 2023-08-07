@@ -1,10 +1,13 @@
 .hero {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    // for header position: fixed
-    // margin-top: 102px;
+    flex-wrap: nowrap;
+    // flex-direction: column;
     padding-bottom: 90px;
+
+    @media (max-width: 763px) {
+        flex-wrap: wrap;
+   }
 
     &__left-side {
         width: 400px;
@@ -19,7 +22,6 @@
 
         font-size: 64px;
         font-weight: 300;
-        // line-height: calc(64 / 64);
         text-transform: uppercase;
 
         margin-bottom: 90px;
@@ -60,7 +62,6 @@
     &__pagination-item {
         font-size: 24px;
         font-weight: 400;
-        // line-height: calc(24 / 24);
 
         position: relative;
     }

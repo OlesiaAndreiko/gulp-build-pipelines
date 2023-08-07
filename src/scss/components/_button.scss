@@ -19,23 +19,24 @@
     &__primary {
         color: $main-txt-cl;
         background-color: $light-bg-cl;
-    }
 
-    &__primary:hover,
-    &__primary:focus {
-        color: $white-txt-cl;
-        background-color: $btn-bg-cl;
+        &:hover,
+        &:focus {
+            color: $white-txt-cl;
+            background-color: $btn-bg-cl;
+        }
     }
 
     &__secondary {
         color: $white-txt-cl;
         background-color: $btn-bg-cl;
-    }
 
-    &__secondary:hover,
-    &__secondary:focus {
-        color: $black-txt-cl;
-        background-color: $title-txt-cl;
+        &:hover,
+        &:focus {
+            color: $black-txt-cl;
+            background-color: $title-txt-cl;
+        }
+
     }
 }
 
@@ -54,13 +55,14 @@
     cursor: pointer;
 
     transition: color $animation, background-color $animation, border-color $animation;
-}
 
-.button-slider:hover, 
-.button-slider:focus {
-    color: $white-txt-cl;
-    border-color: $dark-bg-cl;
-    background-color: $dark-bg-cl;
+    &:hover,
+    &:focus {
+        color: $white-txt-cl;
+        border-color: $dark-bg-cl;
+        background-color: $dark-bg-cl;
+    }
+
 }
 
 
@@ -86,9 +88,9 @@
     background-color: transparent;
 
     transition: color $animation;
-}
 
-.button-review:hover,
-.button-review:focus {
-    color: $accent-txt-cl;
+    &:hover,
+    &:focus {
+        color: $accent-txt-cl;
+    }
 }

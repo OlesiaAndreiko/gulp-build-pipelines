@@ -1,9 +1,15 @@
 .about {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    // justify-content: flex-end;
+    justify-content: center;
     padding-top: 30px;
     padding-bottom: 30px;
+
+    @media screen and (min-width: 763px) {
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+   }
 
     &__wrap {
         padding-left: 100px;
@@ -15,9 +21,17 @@
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
-        // border: 1px solid red;
         padding-top: 30px;
+    }     
+
+    &__content--img {
+        transition: $animation;
     }
+    
+    &__content--img:hover {
+        scale: 1.05;
+    }
+   
 
     &__images--left-side {
         display: flex;
@@ -50,3 +64,4 @@
         color: $black-txt-cl;
     }
 }
+
